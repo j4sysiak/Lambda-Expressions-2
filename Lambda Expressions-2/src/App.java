@@ -1,5 +1,5 @@
 interface Executable {
-	void execute();
+	void check();
 }
 
 class Runner {
@@ -7,7 +7,6 @@ class Runner {
 	public void run(Executable e){
 		System.out.println("Executing code block ...");
 		e.check();
-		e.execute();
 	}
 }
 
@@ -15,7 +14,7 @@ public class App {
 
 	public static void main(String[] args) {
 
-		//Runner runner = new Runner();
+		Runner runner = new Runner();
 		Runner2 runner2 = new Runner2();
 		
 		System.out.println("=================depricated (java 1.6 - 1.7)=======================");
@@ -40,11 +39,11 @@ public class App {
 			}
 
 		}
-		);
+					 );
 		
-		//System.out.println("==================Lambda (java 1.8)======================");
+		System.out.println("==================Lambda (java 1.8)======================");
 		
-		//runner.run( () -> System.out.println("Lambda expression") );
+		runner.run( () -> System.out.println("Lambda expression") );
 		//runner2.run( () -> System.out.println("Lambda2 expression") );
 
 	}
