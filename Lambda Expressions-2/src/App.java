@@ -1,5 +1,4 @@
 interface Executable {
-	void check();
 	void execute();
 }
 
