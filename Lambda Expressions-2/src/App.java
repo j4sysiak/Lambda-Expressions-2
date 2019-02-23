@@ -43,7 +43,14 @@ public class App {
 		
 		System.out.println("==================Lambda (java 1.8)======================");
 		
-		runner.run( () -> System.out.println("Lambda expression") );
+		runner.run( () -> System.out.println("Lambda expression1") );
+		
+		runner.run( () -> {
+							System.out.println("Lambda expression2");
+							System.out.println("Lambda expression3");
+						  } );
+		
+		
 		//runner2.run( () -> System.out.println("Lambda2 expression") );
 
 	}
